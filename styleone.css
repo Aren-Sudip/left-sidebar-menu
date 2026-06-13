@@ -8,24 +8,24 @@
 .parent-container {
   max-width: 768px;
   width: 100%;
-min-height: 1024px;
-height: 100%;
+  min-height: 1024px;
+  height: 100%;
   position: relative;
-  background: #FFFFFF;
+  background: #ffffff;
   z-index: 1;
-  box-shadow: 2px 2px 4px gray;
 }
 .left-section {
-  position: absolute;
+  position: absolute; /*later got to change it to fixed*/
   top: 0;
   left: 0;
   right: 448px;
 
   bottom: 0px;
-  background: #FFFFFF;
+  background: #ffffff;
   z-index: 1000;
-    box-shadow: 16px 0px 52px 0 #0E185033,
-              -2px 0px 4px 0 #0E185033;
+  box-shadow:
+    16px 0px 52px 0 #0e185033,
+    -2px 0px 4px 0 #0e185033;
 }
 .section-nav {
   display: flex;
@@ -36,13 +36,14 @@ height: 100%;
 }
 .section-nav__left {
   display: flex;
+
   gap: 10px;
 }
 .section-selectors {
   max-width: 577;
   width: 100%;
   height: 85%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #1b1c21;
   position: relative;
   left: 0px;
@@ -52,7 +53,6 @@ height: 100%;
   flex-direction: column;
   gap: 200px;
   padding: 20px;
-
 }
 .section-selectors__top {
   display: flex;
@@ -74,7 +74,6 @@ height: 100%;
   justify-content: flex-start;
   gap: 40px;
   align-items: flex-start;
-
 }
 .bottom-section__first {
   display: flex;
@@ -83,11 +82,11 @@ height: 100%;
   justify-content: flex-start;
   gap: 20px;
 }
-.bottom-section-selectors-icons{
+.bottom-section-selectors-icons {
   display: flex;
-  gap: 10px ;
+  gap: 10px;
 }
-.bottom-section-contact-number{
+.bottom-section-contact-number {
   font-size: 1.5rem;
   font-weight: bold;
 }
